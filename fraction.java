@@ -1,4 +1,6 @@
 package prelimProject;
 
-public class fraction {
+public class fraction { // this will be the class program
+
+  
 }

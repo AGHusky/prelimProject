@@ -1,1 +1,52 @@
+package GroupProj;
+
+public class Fraction {
+
+    private int[] numerator;
+    private int[] denominator;
+    private int index;
+    private int count;
+    
+    public Fraction() {
+        index = 2;
+        numerator = new int[index];
+        denominator = new int[index];
+    }
+
+    public Fraction(int size) {
+        index = size;
+        numerator = new int[index];
+        denominator = new int[index];
+    }
+
+    public Fraction(int[] n, int[] d){
+        numerator = n;
+        denominator = d;
+    }
+
+
+    public void setNumerator(int[] n) {
+        numerator = n;
+    }
+
+    public void setDenominator(int[] d) {
+        denominator = d;
+    }
+
+    public void setCount(int i) {
+        count = i;
+    }
+
+  
+    public int getNumerator(int index){
+        return numerator[index];
+    }
+
+    public int getDenominator(int index){
+        return denominator[index];
+    }
+}
+
+
+
 

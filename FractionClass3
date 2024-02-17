@@ -19,14 +19,14 @@ public class FractionClass {
 
     }
 
-    public void setNumerator(int numerator) {
-        this.numerator = numerator;
+    public void setNumerator(int num) {
+        numerator = num;
     }
 
     public int getNumerator() {
         return numerator;
-    }public void setDenominator(){
-        this.denominator = denominator;
+    }public void setDenominator(int denum){
+       denominator = denum;
 
     }
 

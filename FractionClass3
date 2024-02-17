@@ -1,1 +1,51 @@
+package GroupProject;
 
+public class FractionClass {
+    private int numerator;
+    private int denominator;
+
+    public FractionClass(){
+        numerator = 0;
+        denominator = 0;
+
+    } public FractionClass (int wholeNumVal){
+        numerator = wholeNumVal;
+        denominator = 1;
+
+    }
+    public FractionClass(int num,int denum){
+        numerator = num;
+        denominator = denum;
+
+    }
+
+    public void setNumerator(int numerator) {
+        this.numerator = numerator;
+    }
+
+    public int getNumerator() {
+        return numerator;
+    }public void setDenominator(){
+        this.denominator = denominator;
+
+    }
+
+    public int getDenominator() {
+        return denominator;
+    }
+    public String toString(){
+        return "Fraction: " + numerator + "/" + denominator;
+
+    }public double toDouble(){
+        return (double) numerator / denominator;
+    }
+    public void computeGCD(){
+        int gcd = 1;
+        for(int i =1;i < numerator && i<= denominator;i++){
+            if (numerator%i==0 && denominator%i==0){
+                gcd = i;
+            }
+        }
+        System.out.println("GCD: "+gcd);
+    }
+}

@@ -9,7 +9,7 @@ public class GroupProjFraction {
         int userInput = 0;
         //create UI interface - alwin
 
-
+        // First Fraction
         System.out.println("First fraction");
         System.out.print("Enter Numerator: ");
         int numerator1 = kbd.nextInt();
@@ -17,7 +17,7 @@ public class GroupProjFraction {
         int denominator1 = kbd.nextInt();
         Fraction fraction1 = new Fraction(new int[]{numerator1}, new int[]{denominator1});
 
-        // Creating the second fraction
+        // Second Fraction
         System.out.println("Second fraction");
         System.out.print("Enter Numerator: ");
         int numerator2 = kbd.nextInt();

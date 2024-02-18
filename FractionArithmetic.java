@@ -1,7 +1,4 @@
-package prog2.prelimgroup;
-
 import java.util.Scanner;
-
 public class FractionArithmetic {
     public static void main(String[] args) {
         Scanner kbd = new Scanner(System.in);
@@ -11,7 +8,6 @@ public class FractionArithmetic {
         int userinput = 0;
 
         //alwin part greetings
-
 
 
 
@@ -58,9 +54,7 @@ public class FractionArithmetic {
 
                 case 3: //addition - Lopez
                     //getting the gcd
-                    System.out.println("The sum of " + num[0] +"/"+den[0] + " and " + num[1] +"/"+den[1] + " is: ");
-                    users.addFraction(num, den);
-                    break;
+
 
                 case 4: //subtraction - Doria
                     Fraction sub = new Fraction();
@@ -71,7 +65,17 @@ public class FractionArithmetic {
                     break;
 
 
-                case 5: //multiplication - garcia
+                case 5: // multiplication - garcia
+                    System.out.println("Using Fractions from Case 1 and Case 2 for Multiplication");
+                    System.out.println("Fraction 1 = " + num[0] + "/" + den[0]);
+                    System.out.println("Fraction 2 = " + num[1] + "/" + den[1]);
+
+                    // Perform multiplication
+                    users.multiplyFraction(num[0], den[0], num[1], den[1]);
+                    System.out.println("Result of multiplication: " + users.toString());
+                    System.out.println();
+                    System.out.println();
+                    break;
 
                 case 6: //divide - Vigilia
 
@@ -106,4 +110,7 @@ public class FractionArithmetic {
 
         System.exit(0);
     }
+
+
 }
+

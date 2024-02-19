@@ -72,11 +72,11 @@ public class Fraction {
         }
 
         public void divideFraction(int num [], int den[]){
-        int numerator = num[0] * den[1];
-        int denominator = den[0] * num[1];
+        int numerator = num[0] * den[1];//multiply num [0] to den [1]
+        int denominator = den[0] * num[1];//multiply num [0] to num[1]
         setNumerator(numerator);
         setDenominator(denominator);
-        reduceFraction();
+        reduceFraction();//simplifies the result
 
         }
 

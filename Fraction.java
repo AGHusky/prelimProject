@@ -72,13 +72,10 @@ public class Fraction {
             return 0;
         }
 
-        public void divideFraction(Fraction fraction1, Fraction fraction2){
-        int numerator = fraction1.getNumerator() * fraction2.getDenominator();
-        int denominator = fraction1.getDenominator() * fraction2.getNumerator();
+        public void divideFraction(int num [], int den[]){
+        int numerator = num[0] * den[0];
+        int denominator = den[1] * num[1];;
 
-        return new Fraction(numerator, denominator);
-
-            return 0;
         }
 
         public int reduceFraction(){

@@ -72,8 +72,12 @@ public class Fraction {
             return 0;
         }
 
-        public int divideFraction(){
-            //todo
+        public void divideFraction(Fraction fraction1, Fraction fraction2){
+        int numerator = fraction1.getNumerator() * fraction2.getDenominator();
+        int denominator = fraction1.getDenominator() * fraction2.getNumerator();
+
+        return new Fraction(numerator, denominator);
+
             return 0;
         }
 

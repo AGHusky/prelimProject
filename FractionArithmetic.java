@@ -79,9 +79,9 @@ public class FractionArithmetic {
 
                 case 6: //divide - Vigilia
                     Fraction div = new Fraction();
+                    div.divideFraction(num, den);
                     System.out.println("Dividend of " + num[0] +"/"+den[0] + " and " + num[1] +"/"+den[1] + ": ");
-                    System.out.println("Result of Division: " +div.toString()+"or ");
-                    System.out.print(+div.toDouble());
+                    System.out.println("Result of Division: " +div.toString()+" or " +div.toDouble());
                     System.out.println();
                     break;
 

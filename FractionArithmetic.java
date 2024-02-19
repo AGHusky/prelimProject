@@ -78,9 +78,10 @@ public class FractionArithmetic {
                     break;
 
                 case 6: //divide - Vigilia
-                    div.divideFraction(num[0], den[0], num[1], den[1]);
+                    Fraction div = new Fraction();
                     System.out.println("Dividend of " + num[0] +"/"+den[0] + " and " + num[1] +"/"+den[1] + ": ");
-                    System.out.println("Result of Division: " +div.toString());
+                    System.out.println("Result of Division: " +div.toString()+"or ");
+                    System.out.print(+div.toDouble());
                     System.out.println();
                     break;
 

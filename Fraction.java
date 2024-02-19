@@ -27,9 +27,8 @@ public class Fraction {
         public int getDenominator(){ //finished
             return denominator;
         }
-
         public String toString() { //finished
-            return (numerator + "/" + denominator + " or " + toDouble());
+            return (numerator + "/" + denominator);   
         }
         public double toDouble(){ //finished
             return ((double) numerator / denominator);
